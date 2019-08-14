@@ -1,0 +1,55 @@
+{{> header }}
+<div class="page home">
+  <div class="body">
+
+    <div class="loggedin-student">
+      <div id="messageBox">
+        <form>
+          <textarea id="message" type="text" placeholder="your message"></textarea><br>
+          <button id="messageButton" type="submit">Send</button>
+        </form>
+      </div>
+      
+    <div class="filterbar">
+      <h3>Filter by</h3>
+      <select id="type">
+        <option value="default">Selecteer type</option>
+        <option value="Room">Room</option>
+        <option value="Apartment">Apartment</option>
+        <option value="Studio">Studio</option>
+      </select>
+
+      <input id="price-min" type="number" placeholder= "Minimum Price" ></input>
+      <input id="price-max" type="number" placeholder= "Maximum Price" ></input>
+      <input id="surface" type="number" placeholder= "Minimum Surface" ></input>
+      <input id="distance" type="number" placeholder= "Maximum Distance" ></input>
+      <button id="resetfilter">Reset filter</button>
+
+    </div>
+
+
+
+      <div class="card" id="kotlist-student">
+
+        </div>
+    </div>
+
+    <div class="loggedin-owner">
+      <div class="koten-overview">
+        <!--div id="links">
+        <a href="/#/list">Lijst</a>
+        <a href="/#/add">Create</a>
+        <a href="/#/chat">Messages</a>
+        </div-->
+        <div id="kotlist">
+
+        </div>
+      </div>
+
+    </div>
+
+    
+
+  </div>
+</div>
+{{> footer }}

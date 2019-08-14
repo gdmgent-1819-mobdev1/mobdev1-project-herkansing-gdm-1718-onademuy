@@ -1,0 +1,66 @@
+{{> header}}
+<div id="page editdetail">
+  <div id="body">
+      <!-- form to edit details of a kot  --> 
+      <form id="form-edit">
+        <h1>Edit a kot</h1>
+
+        <label>Type</label>
+        <select type="text" id="type">
+          <option>Room</option>
+          <option>Apartment</option>
+          <option>Studio</option>
+        </select>
+        
+        <label>Price per month</label>
+        <input type="number" id="price">
+
+        <label>Warranty</label>
+        <input type="number" id="warranty">        
+
+        <label>Surface</label>
+        <input type="number" id="surface">     
+
+        <h2>Address</h2>
+        <label>adress</label>
+        <input type="text" id="adress">
+        <label>Floor</label>
+        <input type="number" id="floor">
+        <label>Picture</label>
+        <input type="file" id="image">
+
+        <label>Per (date)</label>
+        <input type="date" id="perdate">
+
+        <label>Furnished</label>
+        <select id="furnished">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select> 
+
+        <label>Bathroom</label>
+        <select id="bathroom">
+          <option value="private">Private</option>
+          <option value="shared">Shared</option>
+        </select> 
+
+        <label>Kitchen</label>
+        <select id="kitchen">
+          <option value="private">Private</option>
+          <option value="shared">Shared</option>
+        </select> 
+
+        <label>Toilet</label>
+        <select id="toilet">
+          <option value="private">Private</option>
+          <option value="shared">Shared</option>
+        </select> 
+
+        <label>Discription</label>
+        <textarea id="description"></textarea>
+
+        <button id="submitchanges">Submit changes</button>
+      </form>
+  </div>
+</div>
+{{> footer}}

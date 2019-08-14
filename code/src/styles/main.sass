@@ -1,0 +1,209 @@
+@import "../../node_modules/mapbox-gl/dist/mapbox-gl.css"
+// Generic styling 
+// # = id
+// . = classes
+body
+    font-size: 12px
+    margin: 0 auto
+    background: lightblue
+    height: 100vh
+    font-family: Arial, Helvetica, sans-serif
+    @media (max-width: 600px)
+        font-size: 9px
+    button
+        border: none
+        color: white
+        padding: 15px 32px
+        text-align: center
+        text-decoration: none
+        display: inline-block
+        font-size: 12px
+        margin: 4px 2px
+        cursor: pointer
+        text: black
+        background-color: #555555
+        width: 100%
+        border-radius: 4px
+        onclick: 
+    h1
+        font-size: 15px
+        text-align: center
+        color: black
+        @media (max-width: 600px)
+            font-size: 12px
+    form 
+        font-size: 1.2em
+        margin: 2em auto
+        padding: 2em
+        width: 70%
+        text-align: center
+
+    #app
+        height: 100%
+        position: relative
+    #map
+        top: 0
+        bottom: 0
+        width: 70%
+        height: 500px
+        text-align: initial
+        margin: 0 auto
+    .loggedin-student
+        display: none
+    .loggedin-owner
+        display: none
+    #messageBox
+        position: absolute
+        display: none
+        max-width: 30vw
+        max-height: 20vh
+    .filterbar
+        width: 30%
+        min-width: 200px
+        display: block
+        height: auto
+        margin-left: auto
+        margin-right: auto
+        padding: 10px
+        border-radius: 4px
+    #tindercard
+        width: 220px
+        display: box
+        height: auto
+        margin-left: auto
+        margin-right: auto
+        padding: 10px
+        border-radius: 4px
+    .detaildiv 
+        border-style: solid
+        width: 30%
+        min-width: 200px
+        display: block
+        height: auto
+        margin-left: auto
+        margin-right: auto
+        padding: 10px
+        border-radius: 4px
+    .iconheart
+        background: url(../images/heart.svg) no-repeat
+        width: auto
+        height: auto
+        float: 35%
+        margin-left: auto
+        margin-right: auto
+    .iconcross
+        background: url(../images/x.svg) no-repeat
+        float: 65%
+        width: auto
+        height: auto
+        margin-left: auto
+        margin-right: auto
+    .iconmessage
+        background: url(../images/message-circle.svg) no-repeat
+        float: right
+        width: auto
+        height: auto
+        margin-left: auto
+        margin-right: auto
+    .iconshare
+        background: url(../images/share-2.svg) no-repeat
+        float: right
+        width: auto
+        height: auto
+        margin-left: auto
+        margin-right: auto
+    #buttonsdiv
+        width: 30%
+        min-width: 200px
+        display: block
+        height: auto
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 50px
+        padding: 10px
+        top: 0px    
+    .links
+        width: auto
+        float: left
+        max-width: 400px
+        padding: 10px
+        background-color: lightgrey
+        color: white
+    .rechts
+        margin: 10px
+        float: right
+        width: 40%
+        max-width: 400px
+        overflow: hidden 
+        padding: 10px
+        background-color: lightgrey
+        color: white
+    #form-login
+        width: 30%
+        min-width: 200px
+        display: block
+        height: auto
+        margin-left: auto
+        margin-right: auto
+        padding: 10px
+        background-color: lightblue
+        border-radius: 1em
+    #form-register
+        width: 30%
+        min-width: 200px
+        display: none
+        height: auto
+        margin-left: auto
+        margin-right: auto
+        padding: 10px
+        background-color: lightblue
+        border-radius: 1em
+    .navigation-bar
+        margin: 0
+        padding: 0
+        width: 150px
+        background-color: #f1f1f1
+        position: fixed
+        height: 100%
+        overflow: auto
+        a 
+            display: block
+            color: black
+            padding: 16px
+            text-decoration: none
+            active
+                background-color: lightblue
+                color: blue
+    @media screen and (max-width: 700px)
+        .navigation-bar
+            width: 100%
+            height: auto
+            position: relative
+            a
+                float: left
+    #form-login
+        border-radius: 5px
+        background-color: #f2f2f2
+        padding: 20px
+    #form-register
+        border-radius: 5px
+        background-color: #f2f2f2
+        padding: 20px
+    input, select
+        width: 100%
+        padding: 12px 20px
+        margin: 8px 0
+        display: inline-block
+        border: 1px solid #ccc
+        border-radius: 4px
+        box-sizing: border-box
+
+
+// general
+@import "./colors"
+@import "./page"
+@import "./header"
+@import "./footer"
+
+// pages
+@import "./about"

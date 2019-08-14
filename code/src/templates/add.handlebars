@@ -1,0 +1,61 @@
+ {{> header}}
+<div id="page add">
+  <div id="body">
+      <!-- form to add a new kot --> 
+      <form id="form-add">
+        <h1>Create a new kot</h1>
+
+        <select type="text" id="type">
+          <option>Room</option>
+          <option>Apartment</option>
+          <option>Studio</option>
+        </select> 
+        <br>
+        <input type="number" id="price" placeholder="Price per month">
+        <br>
+        <input type="number" id="warranty" placeholder="Warranty">        
+        <br>
+        <input type="number" id="surface" placeholder="Surface">     
+        <br>
+        <input type="text" id="address" placeholder="Street housenumber, postcode City">
+        
+        <br>
+        <input type="number" id="floor" placeholder="Floor">
+        <br>
+-       <input type="file" id="image">
+        <br>
+
+        <input type="date" id="perdate" placeholder="Per date"><br>
+
+
+        <label>Furnished</label>
+        <select id="furnished">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select> <br>
+
+        <label>Bathroom</label>
+        <select id="bathroom">
+          <option value="private">Private</option>
+          <option value="shared">Shared</option>
+        </select> <br>
+
+        <label>Kitchen</label>
+        <select id="kitchen">
+          <option value="private">Private</option>
+          <option value="shared">Shared</option>
+        </select> <br>
+
+        <label>Toilet</label>
+        <select id="toilet">
+          <option value="private">Private</option>
+          <option value="shared">Shared</option>
+        </select> <br>
+
+        <textarea id="description" placeholder="Description"></textarea><br>
+
+        <button id="submitkot">Add kot</button>
+      </form>
+  </div>
+</div>
+{{> footer}}
